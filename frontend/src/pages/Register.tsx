@@ -22,7 +22,7 @@ const Register = () => {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 overflow-hidden">
+    <div className="h-screen flex items-center justify-center bg-linear-to-br from-blue-400 via-blue-500 to-blue-600 overflow-hidden">
       <div className="w-full max-w-md px-8">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-white mb-3">Register</h2>

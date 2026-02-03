@@ -25,19 +25,20 @@ const Expenses = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-50">
       <Navbar />
 
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      {/* Main Content Area - Below Navbar */}
+      <main className="lg:pl-20 pt-20">
+        <div className="px-8 py-8">
         <div className="mb-8 flex justify-between items-center">
           <div>
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">Daftar Expenses</h2>
+            <h2 className="text-4xl font-bold bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">Daftar Expenses</h2>
             <p className="text-gray-600 text-lg">Kelola semua pengeluaran Anda</p>
           </div>
           <button
             onClick={() => navigate('/add-expense')}
-            className="bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-6 rounded-xl hover:from-green-600 hover:to-emerald-700 transition duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center space-x-2"
+            className="bg-linear-to-r from-green-500 to-emerald-600 text-white py-3 px-6 rounded-xl hover:from-green-600 hover:to-emerald-700 transition duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center space-x-2"
           >
             <span className="text-xl">+</span>
             <span>Tambah Expense</span>
@@ -86,7 +87,7 @@ const Expenses = () => {
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+              <thead className="bg-linear-to-r from-blue-600 to-indigo-600 text-white">
                 <tr>
                   <th className="px-6 py-4 text-left text-sm font-bold uppercase tracking-wider">
                     Nama
@@ -142,7 +143,8 @@ const Expenses = () => {
             </table>
           </div>
         </div>
-      </div>
+        </div>
+      </main>
       <Chatbot />
     </div>
   );

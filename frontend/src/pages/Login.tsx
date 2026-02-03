@@ -56,7 +56,7 @@ const Login = () => {
               <div key={index} className="min-w-full h-full flex flex-col items-center justify-center px-16">
                 {/* Logo */}
                 <div className="mb-12">
-                  <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
+                  <div className="w-32 h-32 bg-linear-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-2xl">
                     <span className="text-6xl">{slide.icon}</span>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ const Login = () => {
       </div>
 
       {/* Right Side - Login Form */}
-      <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 p-8">
+      <div className="flex-1 flex items-center justify-center bg-linear-to-br from-blue-400 via-blue-500 to-blue-600 p-8">
         <div className="w-full max-w-md">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-white mb-3">Sign in</h2>

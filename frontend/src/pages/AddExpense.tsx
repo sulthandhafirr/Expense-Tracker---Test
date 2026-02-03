@@ -26,13 +26,14 @@ const AddExpense = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-50">
       <Navbar />
 
-      {/* Content */}
-      <div className="max-w-3xl mx-auto px-4 py-8">
+      {/* Main Content Area - Below Navbar */}
+      <main className="lg:pl-20 pt-20">
+        <div className="px-8 py-8 max-w-5xl">
         <div className="mb-8">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-2">Tambah Expense</h2>
+          <h2 className="text-4xl font-bold bg-linear-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-2">Tambah Expense</h2>
           <p className="text-gray-600 text-lg">Catat pengeluaran baru Anda</p>
         </div>
 
@@ -118,7 +119,7 @@ const AddExpense = () => {
             <div className="flex space-x-4">
               <button
                 type="submit"
-                className="flex-1 bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-4 rounded-xl hover:from-green-600 hover:to-emerald-700 transition duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="flex-1 bg-linear-to-r from-green-500 to-emerald-600 text-white py-3 px-4 rounded-xl hover:from-green-600 hover:to-emerald-700 transition duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 ✅ Simpan Expense
               </button>
@@ -132,7 +133,8 @@ const AddExpense = () => {
             </div>
           </form>
         </div>
-      </div>
+        </div>
+      </main>
     </div>
   );
 };

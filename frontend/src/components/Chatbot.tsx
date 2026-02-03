@@ -90,9 +90,9 @@ const Chatbot = () => {
     <>
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 h-[32rem] bg-white rounded-2xl shadow-2xl flex flex-col z-50 border border-gray-200 animate-slide-up">
+        <div className="fixed bottom-24 right-6 w-96 h-128 bg-white rounded-2xl shadow-2xl flex flex-col z-50 border border-gray-200 animate-slide-up">
           {/* Header */}
-          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-5 rounded-t-2xl flex justify-between items-center">
+          <div className="bg-linear-to-r from-blue-600 to-indigo-600 text-white p-5 rounded-t-2xl flex justify-between items-center">
             <div>
               <h3 className="font-bold text-lg">🤖 Asisten Expense Tracker</h3>
               <p className="text-xs text-blue-100 flex items-center">
@@ -109,7 +109,7 @@ const Chatbot = () => {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-gradient-to-b from-gray-50 to-white">
+          <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-linear-to-b from-gray-50 to-white">
             {messages.map((msg, idx) => (
               <div
                 key={idx}
@@ -118,7 +118,7 @@ const Chatbot = () => {
                 <div
                   className={`max-w-[75%] p-3 rounded-2xl shadow-md ${
                     msg.sender === 'user'
-                      ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-br-sm'
+                      ? 'bg-linear-to-r from-blue-600 to-indigo-600 text-white rounded-br-sm'
                       : 'bg-white text-gray-800 rounded-bl-sm border border-gray-200'
                   }`}
                 >
@@ -142,7 +142,7 @@ const Chatbot = () => {
               <button
                 onClick={handleSend}
                 disabled={isLoading}
-                className={`bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-3 rounded-xl hover:from-blue-700 hover:to-indigo-700 transition duration-200 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`bg-linear-to-r from-blue-600 to-indigo-600 text-white px-5 py-3 rounded-xl hover:from-blue-700 hover:to-indigo-700 transition duration-200 font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 {isLoading ? '...' : '➤'}
               </button>
@@ -154,7 +154,7 @@ const Chatbot = () => {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-4 rounded-full shadow-2xl hover:from-blue-700 hover:to-indigo-700 transition duration-300 z-50 flex items-center justify-center transform hover:scale-110 hover:-translate-y-1"
+        className="fixed bottom-6 right-6 bg-linear-to-r from-blue-600 to-indigo-600 text-white p-4 rounded-full shadow-2xl hover:from-blue-700 hover:to-indigo-700 transition duration-300 z-50 flex items-center justify-center transform hover:scale-110 hover:-translate-y-1"
         style={{ width: '64px', height: '64px' }}
       >
         {isOpen ? (
