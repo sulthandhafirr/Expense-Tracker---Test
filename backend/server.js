@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
 // Import routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/expenses', require('./routes/expenses'));
+app.use('/api/chatbot', require('./routes/chatbot'));
 
 // Start server
 const PORT = process.env.PORT || 5000;
